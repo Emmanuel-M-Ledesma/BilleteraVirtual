@@ -1,0 +1,12 @@
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\bin\Debug\net5.0\BilleteraVirtual.Shared.deps.json
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\bin\Debug\net5.0\BilleteraVirtual.Shared.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\bin\Debug\net5.0\ref\BilleteraVirtual.Shared.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\bin\Debug\net5.0\BilleteraVirtual.Shared.pdb
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\obj\Debug\net5.0\BilleteraVirtual.Shared.csprojAssemblyReference.cache
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\obj\Debug\net5.0\BilleteraVirtual.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\obj\Debug\net5.0\BilleteraVirtual.Shared.AssemblyInfoInputs.cache
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\obj\Debug\net5.0\BilleteraVirtual.Shared.AssemblyInfo.cs
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\obj\Debug\net5.0\BilleteraVirtual.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\obj\Debug\net5.0\BilleteraVirtual.Shared.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\obj\Debug\net5.0\ref\BilleteraVirtual.Shared.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\Shared\obj\Debug\net5.0\BilleteraVirtual.Shared.pdb

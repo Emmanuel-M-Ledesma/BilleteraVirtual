@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emale\\source\\repos\\BilleteraVirtual\\Shared\\BilleteraVirtual.Shared.csproj": {}
+    "C:\\Users\\Emale\\Documents\\GitHub\\BilleteraVirtual\\Shared\\BilleteraVirtual.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emale\\source\\repos\\BilleteraVirtual\\Shared\\BilleteraVirtual.Shared.csproj": {
+    "C:\\Users\\Emale\\Documents\\GitHub\\BilleteraVirtual\\Shared\\BilleteraVirtual.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emale\\source\\repos\\BilleteraVirtual\\Shared\\BilleteraVirtual.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Emale\\Documents\\GitHub\\BilleteraVirtual\\Shared\\BilleteraVirtual.Shared.csproj",
         "projectName": "BilleteraVirtual.Shared",
-        "projectPath": "C:\\Users\\Emale\\source\\repos\\BilleteraVirtual\\Shared\\BilleteraVirtual.Shared.csproj",
+        "projectPath": "C:\\Users\\Emale\\Documents\\GitHub\\BilleteraVirtual\\Shared\\BilleteraVirtual.Shared.csproj",
         "packagesPath": "C:\\Users\\Emale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emale\\source\\repos\\BilleteraVirtual\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\Emale\\Documents\\GitHub\\BilleteraVirtual\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

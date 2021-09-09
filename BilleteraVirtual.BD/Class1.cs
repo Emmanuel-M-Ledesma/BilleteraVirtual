@@ -4,5 +4,6 @@ namespace BilleteraVirtual.BD
 {
     public class Class1
     {
+
     }
 }

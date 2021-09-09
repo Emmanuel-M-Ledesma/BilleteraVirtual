@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "BilleteraVirtual.BD/1.0.0": {
+        "dependencies": {
+          "BilleteraVirtual.Shared": "1.0.0"
+        },
+        "runtime": {
+          "BilleteraVirtual.BD.dll": {}
+        }
+      },
+      "BilleteraVirtual.Shared/1.0.0": {
+        "runtime": {
+          "BilleteraVirtual.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BilleteraVirtual.BD/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BilleteraVirtual.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
