@@ -23,6 +23,7 @@ CREATE TABLE [UsuarioBilletera] (
   [tipo_documento] char(3)NOT NULL,
   [nro_documento] char(8) NOT NULL,
   [CVU] bigint NOT NULL,
+  [Avatar] NVARCHAR(450),
   PRIMARY KEY ([Id], [Email],[UserName])    	  
 );
 go
