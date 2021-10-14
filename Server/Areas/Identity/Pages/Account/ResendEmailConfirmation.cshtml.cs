@@ -17,6 +17,9 @@ namespace BilleteraVirtual.Server.Areas.Identity.Pages.Account
     [AllowAnonymous]
     public class ResendEmailConfirmationModel : PageModel
     {
+        
+
+        Startup obj = new Startup();
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IEmailSender _emailSender;
 
