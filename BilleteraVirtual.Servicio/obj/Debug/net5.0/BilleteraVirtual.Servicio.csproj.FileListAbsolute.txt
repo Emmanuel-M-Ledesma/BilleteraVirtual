@@ -1,0 +1,15 @@
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\bin\Debug\net5.0\BilleteraVirtual.Servicio.deps.json
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\bin\Debug\net5.0\BilleteraVirtual.Servicio.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\bin\Debug\net5.0\ref\BilleteraVirtual.Servicio.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\bin\Debug\net5.0\BilleteraVirtual.Servicio.pdb
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\bin\Debug\net5.0\BilleteraVirtual.Shared.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\bin\Debug\net5.0\BilleteraVirtual.Shared.pdb
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\obj\Debug\net5.0\BilleteraVirtual.Servicio.csprojAssemblyReference.cache
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\obj\Debug\net5.0\BilleteraVirtual.Servicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\obj\Debug\net5.0\BilleteraVirtual.Servicio.AssemblyInfoInputs.cache
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\obj\Debug\net5.0\BilleteraVirtual.Servicio.AssemblyInfo.cs
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\obj\Debug\net5.0\BilleteraVirtual.Servicio.csproj.CoreCompileInputs.cache
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\obj\Debug\net5.0\BilleteraVirtual.Servicio.csproj.CopyComplete
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\obj\Debug\net5.0\BilleteraVirtual.Servicio.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\obj\Debug\net5.0\ref\BilleteraVirtual.Servicio.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Servicio\obj\Debug\net5.0\BilleteraVirtual.Servicio.pdb
