@@ -1,0 +1,17 @@
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\bin\Debug\net5.0\BilleteraVirtual.Repositorio.deps.json
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\bin\Debug\net5.0\BilleteraVirtual.Repositorio.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\bin\Debug\net5.0\ref\BilleteraVirtual.Repositorio.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\bin\Debug\net5.0\BilleteraVirtual.Repositorio.pdb
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\bin\Debug\net5.0\BilleteraVirtual.BD.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\bin\Debug\net5.0\BilleteraVirtual.Shared.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\bin\Debug\net5.0\BilleteraVirtual.BD.pdb
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\bin\Debug\net5.0\BilleteraVirtual.Shared.pdb
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\obj\Debug\net5.0\BilleteraVirtual.Repositorio.csprojAssemblyReference.cache
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\obj\Debug\net5.0\BilleteraVirtual.Repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\obj\Debug\net5.0\BilleteraVirtual.Repositorio.AssemblyInfoInputs.cache
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\obj\Debug\net5.0\BilleteraVirtual.Repositorio.AssemblyInfo.cs
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\obj\Debug\net5.0\BilleteraVirtual.Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\obj\Debug\net5.0\BilleteraVirtual.Repositorio.csproj.CopyComplete
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\obj\Debug\net5.0\BilleteraVirtual.Repositorio.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\obj\Debug\net5.0\ref\BilleteraVirtual.Repositorio.dll
+C:\Users\Emale\Documents\GitHub\BilleteraVirtual\BilleteraVirtual.Repositorio\obj\Debug\net5.0\BilleteraVirtual.Repositorio.pdb

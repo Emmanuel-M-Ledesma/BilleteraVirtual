@@ -12,13 +12,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 
-using System.Web;
-using System.Timers;
-using Microsoft.JSInterop;
-using ServiceStack;
-using static Microsoft.AspNetCore.Razor.Language.TagHelperMetadata;
-using System.Threading;
-
 namespace BilleteraVirtual.Server.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
@@ -50,64 +43,38 @@ namespace BilleteraVirtual.Server.Areas.Identity.Pages.Account
         {
         }
 
-        private System.Timers.Timer aTimer = new System.Timers.Timer(10800000);
-        private int Token = 10800000;
-        public int StartTimer(int Tiempo)
-        {
-            aTimer.Enabled = true;
-            Tiempo = CountDownTimer(Convert.ToInt32(aTimer.Interval));
-            return Tiempo;
-        }
-
-        public int CountDownTimer(int counter)
-        {
-            if (counter > 0)
-            {
-                counter -= 1;
-            }
-            return counter;
-        }
-
         public async Task<IActionResult> OnPostAsync()
         {
-
-            if (aTimer.Interval == 0)
+            if (!ModelState.IsValid)
             {
-                int R = StartTimer(Token);
-
-                if (!ModelState.IsValid)
-                {
-                    return Page();
-                }
-
-                var user = await _userManager.FindByEmailAsync(Input.Email);
-                if (user == null)
-                {
-                    ModelState.AddModelError(string.Empty, "Verification email sent. Please check your email.");
-                    return Page();
-                }
-
-                var userId = await _userManager.GetUserIdAsync(user);
-                var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                var callbackUrl = Url.Page(
-                    "/Account/ConfirmEmail",
-                    pageHandler: null,
-                    values: new { userId = userId, code = code },
-                    protocol: Request.Scheme);
-                await _emailSender.SendEmailAsync(
-                    Input.Email,
-                    "Confirm your email",
-                    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-
-                ModelState.AddModelError(string.Empty, "Verification email sent. Please check your email.");
                 return Page();
+            }
 
-            }
-            else
+            var user = await _userManager.FindByEmailAsync(Input.Email);
+            if (user == null)
             {
-                CountDownTimer(Convert.ToInt32(aTimer.Interval));
+                ModelState.AddModelError(string.Empty, "Email de verificacion enviado. Por favor varifique su cuenta de email.");
+                return Page();
             }
+
+            var userId = await _userManager.GetUserIdAsync(user);
+            var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+            var callbackUrl = Url.Page(
+                "/Account/ConfirmEmail",
+                pageHandler: null,
+                values: new { userId = userId, code = code },
+                protocol: Request.Scheme);
+            await _emailSender.SendEmailAsync(
+                Input.Email,
+                "Confirme su Email",
+                $"<table style='width:100%;'><tr style='width:100%;'><td style='text-align:left;width:100%;' colspan='3'><img style='width:150px;height:150px; src='image.png' alt='' /></td></tr>" +
+                $"</tr><tr style = 'width:100%;'><td><font size ='3'>Estimado/a</font><br><br></td></tr><tr style = 'width:100%;'><td><font size = '2'> Nos comunicamos con usted para informarle que su cuenta ha sido creada </font><br><br></td></tr>"+
+                $"</table><table style='width:100%;'>" +
+                $"Porfavor confirme su cuenta haciendo <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>click aqui</a>."+
+                $"<tr><td><br/><br/><font size='1' color='#000000'>E-mail generado automaticamente, por favor no responder este correo. </font></td></tr>" + "<tr><td><font size='1' color='#000000'>Powered by: CryptoByte http://www.cryptobyte.com/ </font></td></tr>" + "</table>");
+
+            ModelState.AddModelError(string.Empty, "Email de verificacion enviado. Por favor varifique su cuenta de email.");
             return Page();
         }
     }
