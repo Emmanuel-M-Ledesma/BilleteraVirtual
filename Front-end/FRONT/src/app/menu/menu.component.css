@@ -235,7 +235,7 @@
   font-weight: 500;
   margin: 18px
 } 
-.bxs-user-detail{
+.sidebar.open ~ .bxs-user-detail{
   margin-right: 20px;
 }
 @media (max-width: 420px) {
