@@ -1,0 +1,132 @@
+.inicio{
+
+    position: fixed;
+}
+
+
+.btn-mov{
+
+    height: 51px;
+    left: 813px;
+    top: 387px;
+    color: white;
+    background: #591E4A; 
+}
+.lista-movimientos{
+    width:99%;
+    height: 579px;
+    margin-top: 20px;
+}
+.Select-list{
+    width: 100px;
+    float: left;
+    position: relative;
+    margin-right: 150px;
+}
+.date-picker{
+    width: 100px;
+    float: right;
+    position: relative;
+}
+.bnt-datemov{
+    float: right;
+    position: relative;
+    margin-right: 10%;
+
+}
+.fondo{
+    position: relative;
+width: 100%;
+height: 339px;
+
+top: 0px;
+
+background-color: #6D4072;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%236D4072'/%3E%3Cstop offset='1' stop-color='%23F9FFFF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+.ca-dinero{
+    position: absolute;
+width: 379px;
+height: 81px;
+left:500px;
+top: 96px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+
+color: #000000;
+}
+.CBU{
+    position: absolute;
+width: 283px;
+height: 36px;
+left: 200px;
+top: 222px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #000000;
+
+}
+.numero-cuenta{
+    font-size: 18px;
+}
+.alias{
+    position: absolute;
+width: 283px;
+height: 30px;
+left: 800px;
+top: 220px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #000000;
+}
+.txt-mov{
+    float: left;
+    width: 262px;
+    height: 52px;
+    margin-left: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.titulo-sup {
+    font-family: 'Erica One', fantasy;
+    font-size: 50px;
+    color: #000000;
+    line-height: 100px;
+    text-shadow: 0 1px 0 rgb(121, 118, 118),
+                 0 2px 0 rgb(121, 118, 118),
+                 0 3px 0 rgb(121, 118, 118),
+                 0 4px 0 rgb(121, 118, 118),
+                 0 5px 0 rgb(121, 118, 118),
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0, 0, 0, .6);
+  }

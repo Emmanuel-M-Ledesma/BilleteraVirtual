@@ -1,0 +1,68 @@
+<div class="conteiner-fluid">
+
+    <div class="fondo col-12">
+        <div class="ca-dinero col-4">
+            <span >CA ${{usuario.saldo}}</span><br>
+            <span class="numero-cuenta">N° 4017421-1 355-1</span>
+
+        </div>
+        <div class="CBU col-4">
+            <span>CVU</span><br>
+            <span>{{usuario.cvu}}</span>
+        </div>
+        <div class="alias col-4">
+            <span>Alias</span><br>
+            <span>{{usuario.alias}}</span>
+        </div>
+    </div>
+
+    <div class="lista-movimientos col-12">
+
+            <div class="txt-mov">
+                <span class="titulo-sup"> Movimientos </span>
+            </div>
+            <div class="row bnt-datemov" >
+
+                <div class="Select-list">
+                    <select name="mov" id="mov" class="bg-light" class="btn-mov">
+                        <option value="egreso" selected>Egresos de dinero</option>
+                        <option value="ingreso">Ingreso de dinero</option>
+                        <option value="todos">Todos los movimientos</option>
+                    </select>
+                </div>
+                <div class="date-picker">
+                    <mat-form-field  class="selector-datepicker" appearance="fill">
+                        <mat-label >Fechas</mat-label>
+                        <input  matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker  #picker></mat-datepicker>
+                    </mat-form-field>
+                </div> 
+            </div>
+
+
+
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Egresos de dinero</a></li>
+            <li><a class="dropdown-item" href="#">Ingresos de dinero</a></li>
+        </ul>
+        <table class="table">
+            <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Operacion</th>
+                  <th>Monto</th>
+                  <th>Destinatario</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let t of inmu">
+                  <td>{{ t.fecha }}</td>
+                  <td>{{ t.operacion }}</td>
+                  <td>{{ t.monto }}</td>
+                  <td>{{ t.destinatario }}</td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+</div>
