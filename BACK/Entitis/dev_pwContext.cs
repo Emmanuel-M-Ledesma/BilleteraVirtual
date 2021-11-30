@@ -28,7 +28,7 @@ namespace PILpw.Entitis
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseSqlServer("Server=DESKTOP-B8K86GS/MSSQLSERVER02;Database=dev_pw;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=HP-HERNAN/MSSQLSERVER02;Database=CryptoByte;Trusted_Connection=True;");
             }
         }
 
@@ -75,7 +75,8 @@ namespace PILpw.Entitis
                 entity.Property(e => e.Saldo)
                     .HasMaxLength(50)
                     .IsUnicode(false)
-                    .HasColumnName("saldo");
+                    .HasColumnName("saldo")
+                    .HasConversion<decimal>();
 
                 entity.Property(e => e.TipoCuenta)
                     .HasMaxLength(50)
@@ -105,7 +106,8 @@ namespace PILpw.Entitis
                 entity.Property(e => e.Monto)
                     .HasMaxLength(50)
                     .IsUnicode(false)
-                    .HasColumnName("monto");
+                    .HasColumnName("monto")
+                    .HasConversion<decimal>();
 
                 entity.HasOne(d => d.IdCuentaNavigation)
                     .WithMany(p => p.Operaciones)

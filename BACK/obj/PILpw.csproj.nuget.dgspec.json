@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\PROYECTOS\\PRACTICA\\PIPAY-MONEY\\BACK\\PILpw.csproj": {}
+    "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\PILpw.csproj": {}
   },
   "projects": {
-    "F:\\PROYECTOS\\PRACTICA\\PIPAY-MONEY\\BACK\\PILpw.csproj": {
+    "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\PILpw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PROYECTOS\\PRACTICA\\PIPAY-MONEY\\BACK\\PILpw.csproj",
+        "projectUniqueName": "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\PILpw.csproj",
         "projectName": "PILpw",
-        "projectPath": "F:\\PROYECTOS\\PRACTICA\\PIPAY-MONEY\\BACK\\PILpw.csproj",
+        "projectPath": "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\PILpw.csproj",
         "packagesPath": "C:\\Users\\hernan\\.nuget\\packages\\",
-        "outputPath": "F:\\PROYECTOS\\PRACTICA\\PIPAY-MONEY\\BACK\\obj\\",
+        "outputPath": "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hernan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

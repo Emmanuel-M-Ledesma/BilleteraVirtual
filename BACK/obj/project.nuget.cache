@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hjpApTXOv+wJuKsIK0DQZ8dDla3LKAeYhU4ehbqJM0DNJuP1E9+U8w+s6QHteHbctZ8FvLYsa3YvEKQIo6gR/g==",
+  "dgSpecHash": "0fSHdw2uxUqRYzLA8X9+dkJzbO6Bs2H9PaA11M8NP0G0+sJ0/wrk23c/fPnLMlbptCWp6q/Xoalv5/4qDHnHxQ==",
   "success": true,
-  "projectFilePath": "F:\\PROYECTOS\\PRACTICA\\PIPAY-MONEY\\BACK\\PILpw.csproj",
+  "projectFilePath": "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\PILpw.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hernan\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\hernan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
