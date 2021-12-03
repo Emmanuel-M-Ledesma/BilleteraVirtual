@@ -10,8 +10,8 @@ using PILpw.Entitis;
 namespace PILpw.Migrations
 {
     [DbContext(typeof(dev_pwContext))]
-    [Migration("20211127153132_CryptoByteI")]
-    partial class CryptoByteI
+    [Migration("20211203015739_Correccion")]
+    partial class Correccion
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

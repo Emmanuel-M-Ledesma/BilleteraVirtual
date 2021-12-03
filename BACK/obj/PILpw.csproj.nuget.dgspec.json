@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\PILpw.csproj": {}
+    "D:\\ITSC\\BilleteraVirtual-PRODUCCION\\BACK\\BACK\\PILpw.csproj": {}
   },
   "projects": {
-    "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\PILpw.csproj": {
+    "D:\\ITSC\\BilleteraVirtual-PRODUCCION\\BACK\\BACK\\PILpw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\PILpw.csproj",
+        "projectUniqueName": "D:\\ITSC\\BilleteraVirtual-PRODUCCION\\BACK\\BACK\\PILpw.csproj",
         "projectName": "PILpw",
-        "projectPath": "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\PILpw.csproj",
-        "packagesPath": "C:\\Users\\hernan\\.nuget\\packages\\",
-        "outputPath": "F:\\PROYECTOS\\PRACTICA\\BilleteraVirtual\\BACK\\obj\\",
+        "projectPath": "D:\\ITSC\\BilleteraVirtual-PRODUCCION\\BACK\\BACK\\PILpw.csproj",
+        "packagesPath": "C:\\Users\\Emale\\.nuget\\packages\\",
+        "outputPath": "D:\\ITSC\\BilleteraVirtual-PRODUCCION\\BACK\\BACK\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hernan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Emale\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

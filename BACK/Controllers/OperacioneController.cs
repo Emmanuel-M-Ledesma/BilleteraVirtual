@@ -82,10 +82,12 @@ namespace PILpw.Controllers
                         if (operacione.IdTipoOperacion == 1)
                         {
                             usuario.Saldo -= operacione.Monto;
+                            operacione.Destinatario = usuario.IdUsuario;
                         }
                         else
                         {
                             usuario.Saldo += operacione.Monto;
+                            operacione.Destinatario = usuario.IdUsuario;
                         }
 
 

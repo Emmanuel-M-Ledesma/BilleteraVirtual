@@ -76,7 +76,8 @@ namespace PILpw.Entitis
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("saldo")
-                    .HasConversion<decimal>();
+                    .HasConversion<decimal>()
+                    .HasColumnType("decimal(18,2)");
 
                 entity.Property(e => e.TipoCuenta)
                     .HasMaxLength(50)
@@ -107,7 +108,8 @@ namespace PILpw.Entitis
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("monto")
-                    .HasConversion<decimal>();
+                    .HasConversion<decimal>()
+                    .HasColumnType("decimal(18,2)");
 
                 entity.HasOne(d => d.IdCuentaNavigation)
                     .WithMany(p => p.Operaciones)

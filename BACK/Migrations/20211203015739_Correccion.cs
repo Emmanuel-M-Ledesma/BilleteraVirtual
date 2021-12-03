@@ -2,7 +2,7 @@
 
 namespace PILpw.Migrations
 {
-    public partial class CryptoByteI : Migration
+    public partial class Correccion : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,8 +27,7 @@ namespace PILpw.Migrations
                 name: "Tipo_operacion",
                 columns: table => new
                 {
-                    id_tipo_operacion = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    id_tipo_operacion = table.Column<int>(type: "int", nullable: false),
                     nombre_operacion = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: true)
                 },
                 constraints: table =>
@@ -122,7 +121,6 @@ namespace PILpw.Migrations
                 name: "IX_Operaciones_id_tipo_operacion",
                 table: "Operaciones",
                 column: "id_tipo_operacion",
-                unique: true,
                 filter: "[id_tipo_operacion] IS NOT NULL");
         }
 
