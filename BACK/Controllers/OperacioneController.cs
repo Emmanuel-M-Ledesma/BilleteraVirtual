@@ -38,29 +38,66 @@ namespace PILpw.Controllers
             List<MovimientosModels> contactoslist = new List<MovimientosModels>();
             if (idcuenta.HasValue)
             {
-                var operacion = _context.Operaciones.Where(x => x.IdCuenta == idcuenta).ToList();
+                var operacion = _context.Operaciones.ToList();            
+
                 
                 foreach (var item in operacion)
                 {
+
                     MovimientosModels movimientos = new MovimientosModels();
                     var nomebreop = _context.Operacione.Where(x => x.IdTipoOperacion == item.IdTipoOperacion).FirstOrDefault();
-                    var destina = _context.Cuentas.Where(x => x.IdCuenta == item.Destinatario).FirstOrDefault();
-                    movimientos.idOperacion = item.IdOperacion;
-                    movimientos.idCuenta = item.IdCuenta;
-                    movimientos.monto = item.Monto;
-                    movimientos.fecha = item.FechaOperacion;
-                    movimientos.operacion = nomebreop.NombreOperacion;
-                    if (destina == null)
+                    var destina = _context.Operaciones.Where(x => x.Destinatario == item.Destinatario).FirstOrDefault();
+                    var usuario = _context.Cuentas.Where(x => x.IdCuenta == item.Destinatario).FirstOrDefault();
+                    var Condicion1 = (nomebreop.NombreOperacion == "Transferencia");
+                    var condicion2 = (item.IdCuenta == idcuenta || destina.Destinatario == idcuenta);
+                    if (Condicion1 && condicion2)
                     {
-                        movimientos.destinatario = "";
-                    }
-                    else
-                    {
-                        movimientos.destinatario = destina.Alias;
-                       
-                    }
+                        movimientos.idOperacion = item.IdOperacion;
+                        movimientos.idCuenta = item.IdCuenta;
+                        if (item.IdCuenta == idcuenta)
+                        {
+                            movimientos.monto = item.Monto;
+                        }
+                        else
+                        {
+                            item.Monto = item.Monto * -1;
+                            movimientos.monto = item.Monto;
+                        }
+                        movimientos.fecha = item.FechaOperacion;
+                        movimientos.operacion = nomebreop.NombreOperacion;
+                        if (destina == null)
+                        {
+                            movimientos.destinatario = "";
+                        }
+                        else
+                        {
+                            movimientos.destinatario = usuario.Alias;
 
-                    contactoslist.Add(movimientos);
+                        }
+
+                        contactoslist.Add(movimientos);
+                    }
+                    if ((nomebreop.NombreOperacion == "Deposito" || nomebreop.NombreOperacion == "Retiro") && item.IdCuenta== idcuenta)
+                    {
+                        movimientos.idOperacion = item.IdOperacion;
+                        movimientos.idCuenta = item.IdCuenta;
+                        movimientos.monto = item.Monto;
+                        movimientos.fecha = item.FechaOperacion;
+                        movimientos.operacion = nomebreop.NombreOperacion;
+                        if (destina == null)
+                        {
+                            movimientos.destinatario = "";
+                        }
+                        else
+                        {
+                            movimientos.destinatario = "Propio";
+
+                        }
+
+                        contactoslist.Add(movimientos);
+                    }
+                    
+                    
                 }
                 return Ok(contactoslist);
             }
@@ -114,6 +151,7 @@ namespace PILpw.Controllers
                         var usuario = _context.Cuentas.Where(x => x.IdCuenta == operacione.IdCuenta).FirstOrDefault();
                         var usuarioDestinatario = _context.Cuentas.Where(x => x.IdCuenta == operacione.Destinatario).FirstOrDefault();
                         usuario.Saldo -= operacione.Monto;
+                        
                         if (usuario.Saldo >= 0)
                         {
                             var subtotal = _mapper.Map<Cuenta>(usuario);
