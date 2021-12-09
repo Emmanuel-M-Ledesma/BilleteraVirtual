@@ -16,4 +16,8 @@ export class ContactoService {
   AgregarContacto(object:any,alias:string){
     return this.http.post<any>(this.urlcontact+"?alias="+alias,object);
   }
+
+  EliminarContacto(object:any,id:number){
+    return this.http.delete<any>(this.urlcontact+"?id="+id+"?usuario"+object);
+  }
 }

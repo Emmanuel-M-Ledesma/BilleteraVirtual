@@ -47,7 +47,7 @@ transferir(content:any){
   
   this.mov.Operaciones(this.operacionForm.value).subscribe(res=>{
 
-    this.toastr.success('Trasferecnia Realizada');
+    this.toastr.success('Trasferencia Realizada');
     localStorage.removeItem("idcontacto");
     this.openVerticallyCentered(content)
   },err=>{

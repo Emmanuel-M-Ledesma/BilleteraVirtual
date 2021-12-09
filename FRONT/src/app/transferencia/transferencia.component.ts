@@ -16,6 +16,7 @@ export class TransferenciaComponent implements OnInit {
   public item:any;
   public contactoerr:boolean =false;
   contactoadd!: FormGroup;
+  contactoeliminar!: FormGroup;
   constructor(private router:Router, private datoContactos: ContactoService,private fb: FormBuilder,private toastr: ToastrService) {
     var headers_object = new HttpHeaders().set("Authorization", "Bearer " + localStorage.getItem("jwt"));
    
@@ -51,8 +52,13 @@ export class TransferenciaComponent implements OnInit {
       console.log(err);
       this.contactoerr =true;
     });
-
   }
+
+  eliminarContacto(){
+    localStorage.removeItem('idcontacto')
+  }
+
+
   transferencia(idContaco:number){
     console.log(idContaco);
     this.router.navigateByUrl('/paginaprincipal/transferenciacontacto')
