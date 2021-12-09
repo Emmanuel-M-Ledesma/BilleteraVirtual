@@ -38,6 +38,9 @@ import { PageNotComponent } from './page-not/page-not.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 //nuevo
 import { CotizacionesCryptoComponent } from './cotizaciones-crypto/cotizaciones-crypto.component';
+
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { ContactoComponent } from './contacto/contacto.component';
 export function tokenGetter(){
   return localStorage.getItem("jwt");
 }
@@ -61,6 +64,8 @@ export function tokenGetter(){
     PageNotComponent,
     //nuevo
     CotizacionesCryptoComponent,
+    NosotrosComponent,
+    ContactoComponent,
     
   ],
   imports: [

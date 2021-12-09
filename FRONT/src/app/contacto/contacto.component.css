@@ -1,0 +1,50 @@
+.footer {
+    padding-bottom: 5rem;
+  }
+  
+  .btn-social {
+    border-radius: 100%;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-outline-light:focus {
+    box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+  }
+  
+  
+
+  svg {
+      height:20px;
+      width: 20px;
+  }
+
+  .col-lg-4{
+      margin-top: 200px;
+      margin-left: 50px;
+      border-radius: 100px;
+    background-color: #23252b;
+    color: #fff;
+    width: 500px;
+    height: 200px;
+  }
+
+  .text-uppercase{
+      margin-top: 40px;
+  }
+
+  .title {
+
+      align-items: center;
+      height: 50px;
+  }
+
+  .contactanos{
+      margin-top: 100px;
+      font-family: verdana;
+      font-size: 300%;
+      margin-left: 39%;
+  }

@@ -8,6 +8,9 @@ import { RegistroComponent } from './registro/registro.component';
 import { TransferenciaComponent } from './transferencia/transferencia.component';
 import { VerDetallesComponent } from './ver-detalles/ver-detalles.component';
 
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { ContactoComponent } from './contacto/contacto.component';
+
 import { TransferenciaOtraCuentaComponent } from './transferencia-otra-cuenta/transferencia-otra-cuenta.component';
 import { TransferenciaContactoComponent } from './transferencia-contacto/transferencia-contacto.component';
 import { TransferenciaCuentaPropiaComponent } from './transferencia-cuenta-propia/transferencia-cuenta-propia.component';
@@ -20,6 +23,9 @@ const routes: Routes = [
   {path: '', component:LandingComponent},
   {path: 'registro', component:RegistroComponent},
   {path: 'login', component:LoginComponent},
+  
+  {path: 'contacto', component:ContactoComponent},
+  {path: 'nosotros', component:NosotrosComponent},
  
   {path: '404', component:PageNotComponent},
   {path: 'paginaprincipal', component:MenuComponent,children:[
