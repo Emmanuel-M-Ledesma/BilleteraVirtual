@@ -36,6 +36,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { JwtModule } from '@auth0/angular-jwt';
 import { PageNotComponent } from './page-not/page-not.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+//nuevo
+import { CotizacionesCryptoComponent } from './cotizaciones-crypto/cotizaciones-crypto.component';
 export function tokenGetter(){
   return localStorage.getItem("jwt");
 }
@@ -57,6 +59,8 @@ export function tokenGetter(){
     TransferenciaCuentaPropiaComponent,
     MovPesosComponent,
     PageNotComponent,
+    //nuevo
+    CotizacionesCryptoComponent,
     
   ],
   imports: [

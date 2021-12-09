@@ -1,4 +1,5 @@
-.tit-inicio{
+.tit-inicio
+{
   padding-top: 12px;
   width: 213px;
   height: 60px;
@@ -10,13 +11,12 @@
   align-items: center;
   color: #fff;
 }
-.ppal{
-
+.ppal
+{
   width: 370px;
   height: 53px;
   left: 306px;
   top: 120px;
-
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -25,7 +25,8 @@
   align-items: center;
 }
 
-.cta-ppal{
+.cta-ppal
+{
 width: 652px;
 height: 169px;
 left: 304px;
@@ -37,14 +38,15 @@ border-radius: 15px;
 color:#FFFFFF
 }
 
-.logo-ppal{
+.logo-ppal
+{
 width: 140px;
 height: 111px;
 margin: 10px;
-
 background: #3b83bd;;
 }
-.nombre-ppal{
+.nombre-ppal
+{
 width: 112px;
 height: 77px;
 padding-top: 34px;
@@ -56,11 +58,11 @@ line-height: 42px;
 display: flex;
 align-items: center;
 text-align: center;
-
 color: #FFFFFF;
 }
-.money-ppal{
-  width: 249px;
+.money-ppal
+{
+width: 249px;
 height: 36px;
 margin-top: -109px;
 margin-left: 183px;
@@ -69,7 +71,8 @@ font-weight: normal;
 font-size: 36px;
 line-height: 42px;
 }
-.caja-ppal{
+.caja-ppal
+{
   width: 221px;
   height: 27px;
   margin-left: 183px;
@@ -79,22 +82,27 @@ line-height: 42px;
   line-height: 28px;
 }
 
-.datos{
+.datos
+{
   margin-left: 186px;
 }
 
-.datos2{
+.datos2
+{
   margin-left: 116px;
 }
 
-.datos, .datos2, .datos-ctu, .datos-dol{
+.datos, .datos2, .datos-ctu, .datos-dol
+{
   color: black;
 }
 
-.datos:hover, .datos2:hover, .datos-ctu:hover, .datos-dol:hover{
+.datos:hover, .datos2:hover, .datos-ctu:hover, .datos-dol:hover
+{
   color: #3b83bd;
 }
-.otras-ctas{
+.otras-ctas
+{
   width: 370px;
   height: 53px;
   margin-left: 781px;
@@ -107,31 +115,31 @@ line-height: 42px;
   align-items: center;
 }
 
-.cta-dolares{
+.cta-dolares
+{
 width: 388px;
 height: 169px;
 margin-left: 781px;
-
 border: 1px solid #591E4A;
 box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 background-color: #FFFFFF;
 }
 
-.logo-dol{
+.logo-dol
+{
 width: 117px;
 height: 107px;
 margin: 10px;
-
 background: #591E4A;
 }
 
-.nombre-dol{
+.nombre-dol
+{
 width: 105px;
 height: 73px;
 padding-top: 34px;
 padding-left: 22px;
-
 font-style: normal;
 font-weight: normal;
 font-size: 36px;
@@ -139,24 +147,23 @@ line-height: 42px;
 display: flex;
 align-items: center;
 text-align: center;
-
 color: #FFFFFF;
-
 }
 
-.money-dol{
+.money-dol
+{
 width: 207px;
 height: 54px;
 margin-top: -109px;
 margin-left: 149px;
-
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
 line-height: 28px;
 }
 
-.caja-dol{
+.caja-dol
+{
 width: 194px;
 height: 27px;
 margin-left: 149px;
@@ -165,9 +172,9 @@ font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 21px;
-
 }
-.datos-dol{
+.datos-dol
+{
 width: 279px;
 height: 56px;
 margin-top: -32px;
@@ -180,7 +187,8 @@ display: flex;
 align-items: center;
 text-align: center;
 }
-.cta-ctu{
+.cta-ctu
+{
 width: 388px;
 height: 169px;
 margin-left: 781px;
@@ -190,20 +198,19 @@ box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 background-color: #FFFFFF;
 }
-.logo-ctu{
+.logo-ctu
+{
 width: 117px;
 height: 107px;
 margin: 10px;
-
 background: #591E4A;
 }
-.nombre-ctu{
+.nombre-ctu
+{
 width: 105px;
 height: 73px;
 padding-top: 34px;
 padding-left: 22px;
-
-
 font-style: normal;
 font-weight: normal;
 font-size: 36px;
@@ -211,10 +218,10 @@ line-height: 42px;
 display: flex;
 align-items: center;
 text-align: center;
-
 color: #FFFFFF;
 }
-.money-ctu{
+.money-ctu
+{
 width: 207px;
 height: 54px;
 margin-top: -109px;
@@ -226,7 +233,8 @@ font-weight: normal;
 font-size: 24px;
 line-height: 28px;
 }
-.caja-ctu{
+.caja-ctu
+{
   width: 233px;
   height: 22px;
   margin-left: 149px;
@@ -236,7 +244,8 @@ line-height: 28px;
   font-size: 18px;
   line-height: 21px;  
 }
-.datos-ctu{
+.datos-ctu
+{
 width: 279px;
 height: 56px;
 margin-top: -7px;;
@@ -249,23 +258,27 @@ display: flex;
 align-items: center;
 text-align: center;
 }
-.btn-compartir{
+.btn-compartir
+{
   margin-top: -40px;
 }
-.btn-mov{
+.btn-mov
+{
   height: 51px;
   margin-top: -86px;
   margin-left: 466px;
   color: white;
   background: #591E4A; 
 }
-.list-mov{
+.list-mov
+{
   width: 698px;
   height: 579px;
   margin-top: -200px;
 }
 
-.home-section{
+.home-section
+{
   position: relative;
   min-height: 100vh;
   top: 0;
@@ -276,8 +289,9 @@ text-align: center;
 }
 
 
-body {
-  background-color: #6D4072;
+body 
+{
+background-color: #6D4072;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%236D4072'/%3E%3Cstop offset='1' stop-color='%23F9FFFF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
 background-attachment: fixed;
 background-size: cover;
@@ -286,7 +300,8 @@ background-size: cover;
 
 
 
-.card {
+.card 
+{
   position: relative;
   left: 0px;
   top: 0px;
@@ -302,7 +317,8 @@ background-size: cover;
   border: none
 }
 
-.card .face {
+.card .face 
+{
   position: absolute;
   color: #fff;
   width: 100%;
@@ -315,26 +331,31 @@ background-size: cover;
   backface-visibility: hidden
 }
 
-.card .face.front-face {
+.card .face.front-face 
+{
   padding: 20px 30px;
   position: absolute
 }
 
-.card .face.front-face .bank-name {
+.card .face.front-face .bank-name 
+{
   font-size: 1.1rem;
   font-style: italic;
   font-weight: 500
 }
 
-.card .face.front-face .emv-chip {
+.card .face.front-face .emv-chip 
+{
   width: 80px
 }
 
-.card .face.front-face .wifi {
+.card .face.front-face .wifi 
+{
   transform: rotate(90deg)
 }
 
-.card .face.front-face .card-number {
+.card .face.front-face .card-number 
+{
   font-weight: 500;
   letter-spacing: 6px;
   font-size: 1.12rem;
@@ -342,27 +363,32 @@ background-size: cover;
   font-family: 'Orbitron', sans-serif
 }
 
-.card .face.front-face .card-details {
+.card .face.front-face .card-details 
+{
   height: 100px
 }
 
-.card .face.front-face .card-details .expiry .text-uppercase {
+.card .face.front-face .card-details .expiry .text-uppercase 
+{
   font-size: 0.85rem;
   line-height: 0.9rem
 }
 
 .card .face.front-face .card-details .expiry .month,
-.card .face.front-face .card-details .expiry .year {
+.card .face.front-face .card-details .expiry .year 
+{
   font-size: 1.2rem;
   font-family: 'Orbitron', sans-serif
 }
 
-.card .face.front-face .card-details .card-holder {
+.card .face.front-face .card-details .card-holder 
+{
   font-size: 1.1rem;
   letter-spacing: 2px
 }
 
-.card .face.front-face .master img {
+.card .face.front-face .master img 
+{
   position: absolute;
   bottom: 20px;
   width: 100px;
@@ -370,40 +396,47 @@ background-size: cover;
   object-fit: contain
 }
 
-.card:hover .face.front-face {
+.card:hover .face.front-face 
+{
   transform: rotateY(180deg)
 }
 
-.card .face.back-face {
+.card .face.back-face 
+{
   position: absolute;
   z-index: 1000;
   background: rgba(89, 30, 74, 1);
   transform: rotateY(180deg)
 }
 
-.card:hover .face.back-face {
+.card:hover .face.back-face 
+{
   transform: rotateY(360deg)
 }
 
-.card .face.back-face .black-bar {
+.card .face.back-face .black-bar 
+{
   width: 100%;
   height: 50px;
   background-color: #111
 }
 
-.card .face.back-face .authorize {
+.card .face.back-face .authorize 
+{
   font-size: 0.8rem;
   letter-spacing: 2px
 }
 
-.card .face.back-face .white-bar {
+.card .face.back-face .white-bar 
+{
   width: 75%;
   height: 35px;
   margin-top: 10px;
   background-color: #fff
 }
 
-.card .face.back-face .cvv {
+.card .face.back-face .cvv 
+{
   position: absolute;
   right: 65px;
   letter-spacing: 3px;
@@ -415,7 +448,8 @@ background-size: cover;
   font-weight: 600
 }
 
-.card .face.back-face .back-text {
+.card .face.back-face .back-text 
+{
   font-size: 0.7rem;
   line-height: 1rem;
   font-weight: normal;
@@ -423,7 +457,8 @@ background-size: cover;
   pointer-events: none
 }
 
-.titulo-sup {
+.titulo-sup 
+{
   font-family: 'Erica One', fantasy;
   font-size: 70px;
   color: #FFF;

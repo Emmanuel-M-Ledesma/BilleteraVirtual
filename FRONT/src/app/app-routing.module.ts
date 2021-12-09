@@ -14,6 +14,7 @@ import { TransferenciaCuentaPropiaComponent } from './transferencia-cuenta-propi
 import { MovPesosComponent } from './mov-pesos/mov-pesos.component';
 import { DatosUsuarioComponent } from './datos-usuario/datos-usuario.component';
 import { PageNotComponent } from './page-not/page-not.component';
+import { CotizacionesCryptoComponent } from './cotizaciones-crypto/cotizaciones-crypto.component'
 
 const routes: Routes = [
   {path: '', component:LandingComponent},
@@ -29,7 +30,8 @@ const routes: Routes = [
     {path:'transferenciacontacto',component:TransferenciaContactoComponent},
     {path:'transferenciacuentapropia',component:TransferenciaCuentaPropiaComponent},
     {path: 'mov-pesos', component:MovPesosComponent},
-    {path: 'mod-usuario', component:DatosUsuarioComponent}
+    {path: 'mod-usuario', component:DatosUsuarioComponent},
+    {path: 'cot-crypto', component:CotizacionesCryptoComponent}
   ]}
 ];
 

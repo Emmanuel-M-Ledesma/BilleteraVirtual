@@ -3,6 +3,8 @@ BACK/appsettings.json
 BACK/.vs/PILpw/v16/.suo
 BACK/appsettings.Development.json
 *.v2
+BACK/bin/Debug
+BACK/obj/Debug
 BACK/obj/Debug/net5.0/apphost.exe
 BACK/obj/Debug/net5.0/PILpw.assets.cache
 BACK/obj/Debug/net5.0/PILpw.csprojAssemblyReference.cache
