@@ -21,11 +21,8 @@ export class MovPesosComponent implements OnInit {
   retiromodel:any;
  saldo:boolean = false ;
 
-  constructor(private mov : MovimientosService, private fb: FormBuilder,private toastr: ToastrService,private modalService: NgbModal) { 
-    var headers_object = new HttpHeaders().set("Authorization", "Bearer " + localStorage.getItem("jwt"));
-    
-
-    
+  constructor(private mov : MovimientosService, private fb: FormBuilder,private toastr: ToastrService,private modalService: NgbModal ) { 
+    var headers_object = new HttpHeaders().set("Authorization", "Bearer " + localStorage.getItem("jwt"));    
   }
 
   ngOnInit(): void {
@@ -39,6 +36,9 @@ export class MovPesosComponent implements OnInit {
       fechaOperacion: new FormControl(''),
     });
   }
+  
+
+
 
   ingresar(content:any) {
     this.operacionForm.controls['idTipoOperacion'].setValue(2);
@@ -64,8 +64,7 @@ export class MovPesosComponent implements OnInit {
       this.openVerticallyCentered(retiromodel);
     },err=>{
       
-        this.saldo=true
-      
+        this.saldo=true     
       
     }
     
