@@ -5621,19 +5621,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Welcome\\.nuget\\packages\\": {}
+    "C:\\Users\\hernan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Welcome\\Documents\\GitHub\\BilleteraVirtual\\BACK\\PILpw.csproj",
+      "projectUniqueName": "F:\\PROYECTOS\\CARRERA\\BilleteraVirtual\\BACK\\PILpw.csproj",
       "projectName": "PILpw",
-      "projectPath": "C:\\Users\\Welcome\\Documents\\GitHub\\BilleteraVirtual\\BACK\\PILpw.csproj",
-      "packagesPath": "C:\\Users\\Welcome\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Welcome\\Documents\\GitHub\\BilleteraVirtual\\BACK\\obj\\",
+      "projectPath": "F:\\PROYECTOS\\CARRERA\\BilleteraVirtual\\BACK\\PILpw.csproj",
+      "packagesPath": "C:\\Users\\hernan\\.nuget\\packages\\",
+      "outputPath": "F:\\PROYECTOS\\CARRERA\\BilleteraVirtual\\BACK\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hernan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5704,7 +5704,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

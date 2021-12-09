@@ -17,293 +17,209 @@
     </div>
     <div class="col-2"></div>
     <div class="col-6">
-      <form
-        [formGroup]="registroForm"
-        (ngSubmit)="onSubmit()"
-        class="row g-3 rounded"
-        style="margin-bottom: 10%; margin-right: 10%; color: #5b1c4b"
-      >
+      <form [formGroup]="registroForm" (ngSubmit)="onSubmit()" class="row g-3 rounded"
+        style="margin-bottom: 10%; margin-right: 10%; color: #5b1c4b">
         <div class="row">
           <div class="col-md-6">
-            <label
-              style="margin-top: 5%"
-              id="lblnombreusuarioTxt"
-              class="form-label"
-              >Nombre de Usuario</label
-            >
-            <input
-              type="text"
-              formControlName="nombreusuario"
-              class="form-control"
-              id="nombreusuarioTxt"
-              placeholder="Ingresa tu Nombre de Usuario"
-            />
-            <small
-              *ngIf="
+            <label style="margin-top: 5%" id="lblnombreusuarioTxt" class="form-label">Nombre de Usuario</label>
+            <input type="text" formControlName="nombreusuario" class="form-control" id="nombreusuarioTxt"
+              placeholder="Ingresa tu Nombre de Usuario" />
+            <small *ngIf="
                 registroForm.controls['nombreusuario'].hasError('required') &&
                 registroForm.controls['nombreusuario'].touched
-              "
-              style="color: red"
-              >Por favor ingresa tu nombre</small
-            >
-            <small
-              *ngIf="
+              " style="color: red">Por favor ingresa tu nombre</small>
+            <small *ngIf="
                 registroForm.controls.nombreusuario.touched &&
                 registroForm.controls.nombreusuario.errors?.pattern
-              "
-              style="color: red"
-              >Nombre no correcto</small
-            >
+              " style="color: red">Nombre no correcto</small>
           </div>
           <div class="col-md-6">
-            <label
-              style="margin-top: 5%"
-              id="lblnombreusuarioTxt"
-              class="form-label"
-              >Correo Electrónico</label
-            >
-            <input
-              class="form-control"
-              type="email"
-              placeholder="Correo Electrónico"
-              formControlName="email"
-            />
-            <small
-              *ngIf="
+            <label style="margin-top: 5%" id="lblnombreusuarioTxt" class="form-label">Correo Electrónico</label>
+            <input class="form-control" type="email" placeholder="Correo Electrónico" formControlName="email" />
+            <small *ngIf="
                 registroForm.controls.email.touched &&
                 registroForm.controls.email.errors?.required
-              "
-              style="color: red"
-              >Ingresa un mail</small
-            >
-            <small
-              *ngIf="
+              " style="color: red">Ingresa un mail</small>
+            <small *ngIf="
                 registroForm.controls['email'].hasError('email') &&
                 registroForm.controls['email'].touched
-              "
-              style="color: red"
-              >Por favor ingresa un email válido</small
-            >
+              " style="color: red">Por favor ingresa un email válido</small>
           </div>
           <div class="col-md-6"></div>
         </div>
         <div class="row">
           <div class="col-md-6">
-            <label
-              style="margin-top: 5%"
-              id="lblnombreusuarioTxt"
-              class="form-label"
-              >Contraseña</label
-            >
-            <input
-              class="form-control"
-              type="password"
-              placeholder="Contraseña"
-              formControlName="password"
-            />
-            <small
-              *ngIf="
+            <label style="margin-top: 5%" id="lblnombreusuarioTxt" class="form-label">Contraseña</label>
+            <input class="form-control" type="password" placeholder="Contraseña" formControlName="password" />
+            <small *ngIf="
                 registroForm.controls.password.touched &&
                 registroForm.controls.password.errors?.required
-              "
-              style="color: red"
-              >Ingresa una contraseña</small
-            >
-            <small
-              *ngIf="
+              " style="color: red">Ingresa una contraseña</small>
+            <small *ngIf="
                 registroForm.controls.password.touched &&
                 registroForm.controls.password.errors?.pattern
-              "
-              style="color: red"
-              >Debe contener numeros, letras mayúsculas y minúsculas y por lo
-              menos 8 caracteres</small
-            >
+              " style="color: red">Debe contener numeros, letras mayúsculas y minúsculas y por lo
+              menos 8 caracteres</small>
           </div>
           <div class="col-md-6">
-            <label style="margin-top: 5%" id="lblDniTxt" class="form-label"
-              >Dni</label
-            >
-            <input
-              class="form-control"
-              type="number"
-              placeholder="Dni"
-              formControlName="dni"
-            />
+            <label style="margin-top: 5%" id="lblDniTxt" class="form-label">Dni</label>
+
+            <input type="number" formControlName="dni" class="form-control" id="dniTxt" placeholder="Ingresa tu dni" />
+            <small *ngIf="
+                registroForm.controls['dni'].hasError('required') &&
+                registroForm.controls['dni'].touched
+              " style="color: red">Por favor ingresa tu dni</small>
+            <small *ngIf="
+                registroForm.controls.dni.touched &&
+                registroForm.controls.dni.errors?.pattern
+              " style="color: red">dni no correcto</small>
+
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-6">
-            <label style="margin-top: 5%" id="lblnombreTxt" class="form-label"
-              >Nombre</label
-            >
-            <input
-              type="text"
-              formControlName="nombre"
-              class="form-control"
-              id="nombreoTxt"
-              placeholder="Ingresa tu Nombre"
-            />
-            <small
-              *ngIf="
+            <label style="margin-top: 5%" id="lblnombreTxt" class="form-label">Nombre</label>
+            <input type="text" formControlName="nombre" class="form-control" id="nombreoTxt"
+              placeholder="Ingresa tu Nombre" />
+            <small *ngIf="
                 registroForm.controls['nombre'].hasError('required') &&
                 registroForm.controls['nombre'].touched
-              "
-              style="color: red"
-              >Por favor ingresa tu nombre</small
-            >
-            <small
-              *ngIf="
+              " style="color: red">Por favor ingresa tu nombre</small>
+            <small *ngIf="
                 registroForm.controls.nombre.touched &&
                 registroForm.controls.nombre.errors?.pattern
-              "
-              style="color: red"
-              >Nombre no correcto</small
-            >
+              " style="color: red">Nombre no correcto</small>
           </div>
           <div class="col-md-6">
-            <label style="margin-top: 5%" id="lblapellidoTxt" class="form-label"
-              >Apelldio</label
-            >
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Ingresa tu Apelldio"
-              formControlName="apelldio"
-            />
-            <small
-              *ngIf="
+            <label style="margin-top: 5%" id="lblapellidoTxt" class="form-label">Apelldio</label>
+            <input class="form-control" type="text" placeholder="Ingresa tu Apelldio" formControlName="apelldio" />
+            <small *ngIf="
                 registroForm.controls['apelldio'].hasError('required') &&
                 registroForm.controls['apelldio'].touched
-              "
-              style="color: red"
-              >Por favor ingresa tu apellido</small
-            >
-            <small
-              *ngIf="
+              " style="color: red">Por favor ingresa tu apellido</small>
+            <small *ngIf="
                 registroForm.controls.apelldio.touched &&
                 registroForm.controls.apelldio.errors?.pattern
-              "
-              style="color: red"
-              >Apellido no correcto</small
-            >
+              " style="color: red">Apellido no correcto</small>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
-            <label style="margin-top: 5%" id="lblTelefonoTxt" class="form-label"
-              >Telefono</label
-            >
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Ingresa tu Telefono"
-              formControlName="telefono"
-            />
-            <small
-              *ngIf="
+            <label style="margin-top: 5%" id="lblTelefonoTxt" class="form-label">Telefono</label>
+            <input class="form-control" type="text" placeholder="Ingresa tu Telefono" formControlName="telefono" />
+            <small *ngIf="
                 registroForm.controls.telefono.touched &&
                 registroForm.controls.telefono.errors?.required
-              "
-              style="color: red"
-              >Dato requerido</small
-            >
-            <small
-              *ngIf="
+              " style="color: red">Dato requerido</small>
+            <small *ngIf="
                 registroForm.controls.telefono.touched &&
                 registroForm.controls.telefono.errors?.pattern
-              "
-              style="color: red"
-              >Numero mal inrgesado, formato 351600101</small
-            >
+              " style="color: red">Numero mal inrgesado, formato 351600101</small>
           </div>
           <div class="col-md-6">
-            <label
-              style="margin-top: 5%"
-              id="lblDomicilioioTxt"
-              class="form-label"
-              >Domicilio</label
-            >
-            <input
-              type="text"
-              formControlName="calle"
-              class="form-control"
-              id="DomicilioTxt"
-              placeholder="Ingresa tu Direccion"
-            />
+            <label style="margin-top: 5%" id="lblDomicilioioTxt" class="form-label">Domicilio</label>
+            <input type="text" formControlName="calle" class="form-control" id="DomicilioTxt"
+              placeholder="Ingresa tu Direccion" />
           </div>
         </div>
         <div class="row">
+
           <div class="col-md-6">
-            <label style="margin-top: 5%" id="lblciudadTxt" class="form-label"
-              >Ciudad</label
-            >
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Ingresa tu Ciudad"
-              formControlName="ciudad"
-            />
-            <small
-              *ngIf="
-                registroForm.controls['ciudad'].hasError('required') &&
-                registroForm.controls['ciudad'].touched
-              "
-              style="color: red"
-              >Por favor ingresa una ciudad</small
-            >
+            <label style="margin-top: 5%" id="lblpaisTxt" class="form-label">Pais</label>
+            <select name="Pais" id="Pais" class="form-select form-select-sm" formControlName="pais">
+              <option value="" disabled selected hidden>Ingresa tu pais</option>
+              <option value="Argentina">Argentina</option>
+            </select>
+            <small *ngIf="
+            registroForm.controls['pais'].hasError('required') &&
+            registroForm.controls['pais'].touched
+          " style="color: red">Por favor ingresa un pais</small>
           </div>
           <div class="col-md-6">
-            <label
-              style="margin-top: 5%"
-              id="lblprovinciaTxt"
-              class="form-label"
-              >Provincia</label
-            >
-            <input
-              type="text"
-              formControlName="provincia"
-              class="form-control"
-              id="provinciaTxt"
-              placeholder="Ingresa tu Provincia"
-            />
+            <label style="margin-top: 5%" id="lblprovinciaTxt" class="form-label">Provincia</label>
+            <select name="provincia" id="provincia" class="form-select form-select-sm" formControlName="provincia">
+              <option value="" disabled selected hidden>Ingresa tu provincia</option>
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="Catamarca">Catamarca</option>
+              <option value="Chaco">Chaco</option>
+              <option value="Chubut">Chubut</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Corrientes">Corrientes</option>
+              <option value="Entre Ríos">Entre Ríos</option>
+              <option value="Formosa">Formosa</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="La Pampa">La Pampa</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Mendoza">Mendoza</option>
+              <option value="Misiones">Misiones</option>
+              <option value="Neuquén">Neuquén</option>
+              <option value="Río Negro">Río Negro</option>
+              <option value="Salta">Salta</option>
+              <option value="San Juan">San Juan</option>
+              <option value="San Luis">San Luis</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Santiago del Estero">Santiago del Estero</option>
+              <option value="Tierra del Fuego">Tierra del Fuego</option>
+              <option value="Tucumán">Tucumán</option>
+            </select>
+            <small *ngIf="
+            registroForm.controls['provincia'].hasError('required') &&
+            registroForm.controls['provincia'].touched
+          " style="color: red">Por favor ingresa una provincia</small>
           </div>
         </div>
+
         <div class="col-md-6">
-          <label style="margin-top: 5%" id="lblpaisTxt" class="form-label"
-            >Pais</label
-          >
-          <input
-            class="form-control"
-            type="text"
-            placeholder="Ingresa tu Pais"
-            formControlName="pais"
-          />
+          <label style="margin-top: 5%" id="lblciudadTxt" class="form-label">Ciudad</label>
+          <select name="ciudad" id="ciudad" class="form-select form-select-sm" formControlName="ciudad">
+            <option value="" disabled selected hidden>Ingresa tu Ciudad</option>
+            <option value="La Plata">La Plata</option>
+            <option value="San Fernando del Valle de Catamarca">San Fernando del Valle de Catamarca</option>
+            <option value="Resistencia">Resistencia</option>
+            <option value="Rawson">Rawson</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Paraná">Paraná</option>
+            <option value="Formosa">Formosa</option>
+            <option value="San Salvador de Jujuy">San Salvador de Jujuy</option>
+            <option value="Santa Rosa">Santa Rosa</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Posadas">Posadas</option>
+            <option value="Neuquén">Neuquén</option>
+            <option value="Viedma">Viedma</option>
+            <option value="Salta">Salta</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Río Gallegos">Río Gallegos</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Santiago del Estero">Santiago del Estero</option>
+            <option value="Ushuaia">Ushuaia</option>
+            <option value="San Miguel de Tucumán">San Miguel de Tucumán</option>
+          </select>
+          <small *ngIf="
+              registroForm.controls['ciudad'].hasError('required') &&
+              registroForm.controls['ciudad'].touched
+            " style="color: red">Por favor ingresa una ciudad</small>
         </div>
 
         <div class="col-12">
-          <label class="form-label" for="customFile"
-            >Adjunta aqui una captura de tu DNI</label
-          >
+          <label class="form-label" for="customFile">Adjunta aqui una captura de tu DNI</label>
           <input type="file" class="form-control" id="customFile" />
         </div>
-
+<!--  
         <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="btnTerminos" />
-            <label class="form-check-label" for="gridCheck">
-              Acepto los términos y condiciones
-            </label>
+          <div class="form-check">      
+            <input class="form-check-input" type="checkbox" id="btnTerminos" formControlName="terminos"/>
+            <label class="form-check-label" for="gridCheck">Acepto los términos y condiciones</label>
           </div>
         </div>
+        -->
         <div class="col-12">
-          <button
-            [disabled]="registroForm.invalid"
-            style="margin-bottom: 5%"
-            type="submit"
-            id="btnRegistro"
-            class="btn btn-outline-success"
-          >
+          <button [disabled]="registroForm.invalid" style="margin-bottom: 5%" type="submit" id="btnRegistro"
+            class="btn btn-outline-success">
             Registrarme!
           </button>
         </div>

@@ -1,254 +1,393 @@
 <body>
-    
-      <!-- seleccion de transferencia -->
-      <div class="container-fluid home-section">
-        <div class="volver row" style="margin-left: 0;">
-          <div>
-              <a routerLink="/paginaprincipal/transferencia">
-              <i class='bx bx-arrow-back arrow' style="color: white;"></i>
-              <span class="links_name" style="color: white;">Volver</span>
-              </a>
-          </div>
-          <span class="titulo-sup"> Ingresar/Retirar Dinero </span>
-        </div>
-        <div class="row">
-          <div class="col">
-            <button
-              type="button"
-              class="btn btn-op btn-ingresar"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseIngresar"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-              
-              
-            >
-              Ingresar dinero
-            </button>
-          </div>
-          <div class="col">
-            <button
-              type="button"
-              class="btn btn-op btn-retirar"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseRetirar"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              Retirar dinero
-            </button>
-          </div>
-        </div>
-      
-        <!-- Ingresar dinero -->
-         <div class="ingreso" class="collapse" id="collapseIngresar" >
-          <div class="row">
-            <div class="col-md-8">
-              <form [formGroup]="operacionForm" (ngSubmit)="ingresar(content)" class="row g-3 rounded" style="margin-bottom: 10%; margin-right: 10%; color: #5b1c4b">
-                <div class="wrapper bg-white mt-sm-5">
-                  <h6 class="text-uppercase">Ingresar Dinero</h6>
-                  
-                  <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Nombre de Titular</span> </div>
-                  <div class="row">
-                      <div class="col-md-6">
-                          <div class="inputbox mt-3 mr-2"> <input type="numbet" name="name" class="form-control" required="required"> <i class="fa fa-credit-card"></i> <span>Número de la tarjeta</span> </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="d-flex flex-row">
-                              <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control" required="required"> <span>Expira</span> </div>
-                              <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control" required="required"> <span>CVV</span> </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="mt-4 mb-4">
-                      <h6 class="text-uppercase">Dirección</h6>
-                      <div class="row mt-3">
-                          <div class="col-md-6">
-                              <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control" required="required"> <span>Calle</span> </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control" required="required"> <span>Ciudad</span> </div>
-                          </div>
-                      </div>
-                      <div class="row mt-2">
-                          <div class="col-md-6">
-                              <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control" required="required"> <span>Provinacia</span> </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control" required="required"> <span>Codigo Postal</span> </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="mt-4 mb-4">
-                    <h6 class="text-uppercase">Monto a Ingresar</h6>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control" required="required" formControlName="monto"><i class="fas fa-money-bill-wave"></i>  <span>Monto</span> </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-              </div>
-              <div class="mt-4 mb-4 d-flex justify-content-between"> <span></span> <button class="btn btn-success px-3" type="submit">Confirmar</button> </div>
-               
-              </form>
-            </div>
-           
-          </div>
-         </div>
-      
-        <!-- Retirar dinero -->
-        <div class="ingreso" class="collapse" id="collapseRetirar" >
-          <div class="row">
-            <div class="col-md-8">
-              <form [formGroup]="operacionForm" (ngSubmit)="retiro(retiromodel)" class="row g-3 rounded" style="margin-bottom: 10%; margin-right: 10%; color: #5b1c4b">
-                <div class="wrapper bg-white mt-sm-5">
-                  <h6 class="text-uppercase">Retirar Dinero</h6>
-                  
-                  <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Nombre de Titular</span> </div>
-                  <div class="row">
-                      <div class="col-md-6">
-                          <div class="inputbox mt-3 mr-2"> <input type="numbet" name="name" class="form-control" required="required"> <i class="fa fa-credit-card"></i> <span>Número de la tarjeta</span> </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="d-flex flex-row">
-                              <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control" required="required"> <span>Expira</span> </div>
-                              <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control" required="required"> <span>CVV</span> </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="mt-4 mb-4">
-                      <h6 class="text-uppercase">Dirección</h6>
-                      <div class="row mt-3">
-                          <div class="col-md-6">
-                              <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control" required="required"> <span>Calle</span> </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control" required="required"> <span>Ciudad</span> </div>
-                          </div>
-                      </div>
-                      <div class="row mt-2">
-                          <div class="col-md-6">
-                              <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control" required="required"> <span>Provinacia</span> </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control" required="required"> <span>Codigo Postal</span> </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="mt-4 mb-4">
-                    <h6 class="text-uppercase">Monto a Ingresar</h6>
-                    <div *ngIf="saldo" class="alert alert-danger">No se puede realizar la operación, saldo insuficiente</div>
 
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control" required="required" formControlName="monto"><i class="fas fa-money-bill-wave"></i>  <span>Monto</span> </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-              </div>
-              <div class="mt-4 mb-4 d-flex justify-content-between"> <span></span> <button class="btn btn-success px-3" type="submit">Confirmar</button> </div>
-               
-              </form>
-            </div>
-           
-          </div>
-         
-        </div>
+  <!-- seleccion de transferencia -->
+  <div class="container-fluid home-section">
+    <div class="volver row" style="margin-left: 0;">
+      <div>
+        <a routerLink="/paginaprincipal/transferencia">
+          <i class='bx bx-arrow-back arrow' style="color: white;"></i>
+          <span class="links_name" style="color: white;">Volver</span>
+        </a>
       </div>
-      //ingreso
-      <ng-template #content let-modal>
-        
-         
-              <div class="modal-content rounded-0 p-4" style="align-items: center;border-radius: 30px;background-color: transparent;">
-                  <div class='top'>
-                    <div class="success-checkmark">
-                      <div class="check-icon">
-                        <span class="icon-line line-tip"></span>
-                        <span class="icon-line line-long"></span>
-                        <div class="icon-circle"></div>
-                        <div class="icon-fix"></div>
-                      </div>
-                    </div>
-                      <div class="headr">Ingreso de Dinero Realizado</div>
+      <span class="titulo-sup"> Ingresar/Retirar Dinero </span>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-op btn-ingresar" data-bs-toggle="collapse"
+          data-bs-target="#collapseIngresar" aria-expanded="false" aria-controls="collapseExample">
+          Ingresar dinero
+        </button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-op btn-retirar" data-bs-toggle="collapse" data-bs-target="#collapseRetirar"
+          aria-expanded="false" aria-controls="collapseExample">
+          Retirar dinero
+        </button>
+      </div>
+    </div>
+
+    <!-- Ingresar dinero -->
+    <div class="ingreso" class="collapse" id="collapseIngresar">
+      <div class="row">
+        <div class="col-md-8">
+          <form [formGroup]="operacionForm" (ngSubmit)="ingresar(content)" class="row g-3 rounded"
+            style="margin-bottom: 10%; margin-right: 10%; color: #5b1c4b">
+            <div class="wrapper bg-white mt-sm-5">
+              <h6 class="text-uppercase">Ingresar Dinero</h6>
+
+              <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required">
+                <span>Nombre de Titular</span>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="inputbox mt-3 mr-2"> <input type="numbet" name="name" class="form-control"
+                      required="required"> <i class="fa fa-credit-card"></i> <span>Número de la tarjeta</span> </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex flex-row">
+                    <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control"
+                        required="required"> <span>Expira</span> </div>
+                    <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control"
+                        required="required"> <span>CVV</span> </div>
                   </div>
-                  
-                  <div class="modal-body">
-                    <div class="">
-                      <div class="text-center" style="float: left;">
-                        <button class="btn btn-lg btn-raised btn-wave btn-icon btn-rounded mb-2 teal" routerlink="/paginaprincipal/inicio" (click)="modal.close()"> 
-                          <a routerLink="/paginaprincipal/inicio">
-                            <i class="fas fa-home" style="color:white"></i>
-                          </a>
-                        </button><br>
-                        <span class="links_name">Inicio</span>
-                      </div>
-                      <div class="text-center" style="float: right;margin-left: 30px;" >
-                        <button class="btn btn-lg btn-raised btn-wave btn-icon btn-rounded mb-2 teal" routerlink="/paginaprincipal/mov-pesos" (click)="modal.close()"> 
-                          <a routerLink="/paginaprincipal/inicio">
-                            <i class="fas fa-hand-holding-usd" style="color: white;"></i>
-                          </a>
-                        </button><br>
-                        <span class="links_name">Otra operacion</span>
-                      </div>
-                    </div>
-                   
+                </div>
+              </div>
+              <div class="mt-4 mb-4">
+                <h6 class="text-uppercase">Dirección</h6>
+
+                <div class="row mt-3">
+                  <div class="col-md-6">
+                    <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control"
+                        required="required"> <span>Calle</span> </div>
                   </div>
-                   
-              </div>
-          
-      
-      </ng-template>
-      //retiro
-      <ng-template #retiromodel let-modal>
-        
-         
-        <div class="modal-content rounded-0 p-4" style="align-items: center;border-radius: 30px;background-color: transparent;">
-            <div class='top'>
-              <div class="success-checkmark">
-                <div class="check-icon">
-                  <span class="icon-line line-tip"></span>
-                  <span class="icon-line line-long"></span>
-                  <div class="icon-circle"></div>
-                  <div class="icon-fix"></div>
+                  <div class="col-md-6">
+                    <label style="margin-top: -50%" id="lblprovinciaTxt" class="form-label">Provincia</label>
+                    <!--
+                              <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control" required="required"> <span>Provinacia</span> </div>
+                                -->
+                    <select name="provincia" id="rovincia" class="form-select form-select-sm"
+                      formControlName="provincia">
+                      <option value="" selected></option>
+                      <option value="Buenos Aires">Buenos Aires</option>
+                      <option value="Catamarca">Catamarca</option>
+                      <option value="Chaco">Chaco</option>
+                      <option value="Chubut">Chubut</option>
+                      <option value="Córdoba">Córdoba</option>
+                      <option value="Corrientes">Corrientes</option>
+                      <option value="Entre Ríos">Entre Ríos</option>
+                      <option value="Formosa">Formosa</option>
+                      <option value="Jujuy">Jujuy</option>
+                      <option value="La Pampa">La Pampa</option>
+                      <option value="La Rioja">La Rioja</option>
+                      <option value="Mendoza">Mendoza</option>
+                      <option value="Misiones">Misiones</option>
+                      <option value="Neuquén">Neuquén</option>
+                      <option value="Río Negro">Río Negro</option>
+                      <option value="Salta">Salta</option>
+                      <option value="San Juan">San Juan</option>
+                      <option value="San Luis">San Luis</option>
+                      <option value="Santa Cruz">Santa Cruz</option>
+                      <option value="Santa Fe">Santa Fe</option>
+                      <option value="Santiago del Estero">Santiago del Estero</option>
+                      <option value="Tierra del Fuego">Tierra del Fuego</option>
+                      <option value="Tucumán">Tucumán</option>
+                                         
+                    </select>
+                  </div>
                 </div>
+
+                <div class="row mt-2">
+                  <div class="col-md-6">
+                    <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control"
+                        required="required"> <span>Codigo Postal</span> </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label style="margin-top: -50%" id="lblCiudadTxt" class="form-label">Ciudad</label>
+                    <select name="ciudad" id="ciudad" class="form-select form-select-sm" formControlName="ciudad">
+                      <option value="" selected></option>
+                      <option value="La Plata">La Plata</option>
+                      <option value="San Fernando del Valle de Catamarca">San Fernando del Valle de Catamarca</option>
+                      <option value="Resistencia">Resistencia</option>
+                      <option value="Rawson">Rawson</option>
+                      <option value="Córdoba">Córdoba</option>
+                      <option value="Corrientes">Corrientes</option>
+                      <option value="Paraná">Paraná</option>
+                      <option value="Formosa">Formosa</option>
+                      <option value="San Salvador de Jujuy">San Salvador de Jujuy</option>
+                      <option value="Santa Rosa">Santa Rosa</option>
+                      <option value="La Rioja">La Rioja</option>
+                      <option value="Mendoza">Mendoza</option>
+                      <option value="Posadas">Posadas</option>
+                      <option value="Neuquén">Neuquén</option>
+                      <option value="Viedma">Viedma</option>
+                      <option value="Salta">Salta</option>
+                      <option value="San Juan">San Juan</option>
+                      <option value="San Luis">San Luis</option>
+                      <option value="Río Gallegos">Río Gallegos</option>
+                      <option value="Santa Fe">Santa Fe</option>
+                      <option value="Santiago del Estero">Santiago del Estero</option>
+                      <option value="Ushuaia">Ushuaia</option>
+                      <option value="San Miguel de Tucumán">San Miguel de Tucumán</option>
+                                            
+                    </select>
+                    
+                  </div>
+                </div>
+
               </div>
-                <div class="headr">Retiro de Dinero Realizado</div>
+              <div class="mt-4 mb-4">
+                <h6 class="text-uppercase">Monto a Ingresar</h6>
+                <div class="row mt-3">
+                  <div class="col-md-6">
+                    <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control"
+                        required="required" formControlName="monto"><i class="fas fa-money-bill-wave"></i>
+                      <span>Monto</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
             </div>
-            
-            <div class="modal-body">
-              <div class="">
-                <div class="text-center" style="float: left;">
-                  <button class="btn btn-lg btn-raised btn-wave btn-icon btn-rounded mb-2 teal" routerlink="/paginaprincipal/inicio" (click)="modal.close()"> 
-                    <a routerLink="/paginaprincipal/inicio">
-                      <i class="fas fa-home" style="color:white"></i>
-                    </a>
-                  </button><br>
-                  <span class="links_name">Inicio</span>
-                </div>
-                <div class="text-center" style="float: right;margin-left: 30px;" >
-                  <button class="btn btn-lg btn-raised btn-wave btn-icon btn-rounded mb-2 teal" routerlink="/paginaprincipal/mov-pesos" (click)="modal.close()"> 
-                    <a routerLink="/paginaprincipal/inicio">
-                      <i class="fas fa-hand-holding-usd" style="color: white;"></i>
-                    </a>
-                  </button><br>
-                  <span class="links_name">Otra operacion</span>
-                </div>
-              </div>
-             
-            </div>
-             
+            <div class="mt-4 mb-4 d-flex justify-content-between"> <span></span> <button class="btn btn-success px-3"
+                type="submit">Confirmar</button> </div>
+
+          </form>
         </div>
-    
 
-</ng-template>
-  
-  
+      </div>
+    </div>
+
+    <!-- Retirar dinero -->
+    <div class="ingreso" class="collapse" id="collapseRetirar">
+      <div class="row">
+        <div class="col-md-8">
+          <form [formGroup]="operacionForm" (ngSubmit)="retiro(retiromodel)" class="row g-3 rounded"
+            style="margin-bottom: 10%; margin-right: 10%; color: #5b1c4b">
+            <div class="wrapper bg-white mt-sm-5">
+              <h6 class="text-uppercase">Retirar Dinero</h6>
+
+              <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required">
+                <span>Nombre de Titular</span>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="inputbox mt-3 mr-2"> <input type="numbet" name="name" class="form-control"
+                      required="required"> <i class="fa fa-credit-card"></i> <span>Número de la tarjeta</span> </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex flex-row">
+                    <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control"
+                        required="required"> <span>Expira</span> </div>
+                    <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control"
+                        required="required"> <span>CVV</span> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 mb-4">
+                <h6 class="text-uppercase">Dirección</h6>
+
+                <div class="row mt-3">
+                  <div class="col-md-6">
+                    <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control"
+                        required="required"> <span>Calle</span> </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label style="margin-top: -50%" id="lblprovinciaTxt" class="form-label">Provincia</label>
+                    <!--
+                              <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control" required="required"> <span>Provinacia</span> </div>
+                                -->
+                    <select name="provincia" id="Provincia" class="form-select form-select-sm"
+                      formControlName="provincia">
+                      <option value="" selected></option>
+                      <option value="Buenos Aires">Buenos Aires</option>
+                      <option value="Catamarca">Catamarca</option>
+                      <option value="Chaco">Chaco</option>
+                      <option value="Chubut">Chubut</option>
+                      <option value="Córdoba">Córdoba</option>
+                      <option value="Corrientes">Corrientes</option>
+                      <option value="Entre Ríos">Entre Ríos</option>
+                      <option value="Formosa">Formosa</option>
+                      <option value="Jujuy">Jujuy</option>
+                      <option value="La Pampa">La Pampa</option>
+                      <option value="La Rioja">La Rioja</option>
+                      <option value="Mendoza">Mendoza</option>
+                      <option value="Misiones">Misiones</option>
+                      <option value="Neuquén">Neuquén</option>
+                      <option value="Río Negro">Río Negro</option>
+                      <option value="Salta">Salta</option>
+                      <option value="San Juan">San Juan</option>
+                      <option value="San Luis">San Luis</option>
+                      <option value="Santa Cruz">Santa Cruz</option>
+                      <option value="Santa Fe">Santa Fe</option>
+                      <option value="Santiago del Estero">Santiago del Estero</option>
+                      <option value="Tierra del Fuego">Tierra del Fuego</option>
+                      <option value="Tucumán">Tucumán</option>
+                                          
+                    </select>
+                    
+                  </div>
+                </div>
+
+                <div class="row mt-2">
+                  <div class="col-md-6">
+                    <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control"
+                        required="required"> <span>Codigo Postal</span> </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label style="margin-top: -50%" id="lblCiudadTxt" class="form-label">Ciudad</label>
+                    <!-- 
+                              <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control" required="required"> <span>Ciudad</span> </div>
+                              -->
+                    <select name="ciudad" id="ciudad" class="form-select form-select-sm" formControlName="ciudad">
+                      <option value="" selected></option>
+                      <option value="La Plata">La Plata</option>
+                      <option value="San Fernando del Valle de Catamarca">San Fernando del Valle de Catamarca</option>
+                      <option value="Resistencia">Resistencia</option>
+                      <option value="Rawson">Rawson</option>
+                      <option value="Córdoba">Córdoba</option>
+                      <option value="Corrientes">Corrientes</option>
+                      <option value="Paraná">Paraná</option>
+                      <option value="Formosa">Formosa</option>
+                      <option value="San Salvador de Jujuy">San Salvador de Jujuy</option>
+                      <option value="Santa Rosa">Santa Rosa</option>
+                      <option value="La Rioja">La Rioja</option>
+                      <option value="Mendoza">Mendoza</option>
+                      <option value="Posadas">Posadas</option>
+                      <option value="Neuquén">Neuquén</option>
+                      <option value="Viedma">Viedma</option>
+                      <option value="Salta">Salta</option>
+                      <option value="San Juan">San Juan</option>
+                      <option value="San Luis">San Luis</option>
+                      <option value="Río Gallegos">Río Gallegos</option>
+                      <option value="Santa Fe">Santa Fe</option>
+                      <option value="Santiago del Estero">Santiago del Estero</option>
+                      <option value="Ushuaia">Ushuaia</option>
+                      <option value="San Miguel de Tucumán">San Miguel de Tucumán</option>                      
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 mb-4">
+                <h6 class="text-uppercase">Monto a Retirar</h6>
+                <div *ngIf="saldo" class="alert alert-danger">No se puede realizar la operación, saldo insuficiente
+                </div>
+
+                <div class="row mt-3">
+                  <div class="col-md-6">
+                    <div class="inputbox mt-3 mr-2"> <input type="number" name="name" class="form-control"
+                        required="required" formControlName="monto"><i class="fas fa-money-bill-wave"></i>
+                      <span>Monto</span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="mt-4 mb-4 d-flex justify-content-between"> <span></span> <button class="btn btn-success px-3"
+                type="submit">Confirmar</button> </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  //ingreso
+  <ng-template #content let-modal>
+
+
+    <div class="modal-content rounded-0 p-4"
+      style="align-items: center;border-radius: 30px;background-color: transparent;">
+      <div class='top'>
+        <div class="success-checkmark">
+          <div class="check-icon">
+            <span class="icon-line line-tip"></span>
+            <span class="icon-line line-long"></span>
+            <div class="icon-circle"></div>
+            <div class="icon-fix"></div>
+          </div>
+        </div>
+        <div class="headr">Ingreso de Dinero Realizado</div>
+      </div>
+
+      <div class="modal-body">
+        <div class="">
+          <div class="text-center" style="float: left;">
+            <button class="btn btn-lg btn-raised btn-wave btn-icon btn-rounded mb-2 teal"
+              routerlink="/paginaprincipal/inicio" (click)="modal.close()">
+              <a routerLink="/paginaprincipal/inicio">
+                <i class="fas fa-home" style="color:white"></i>
+              </a>
+            </button><br>
+            <span class="links_name">Inicio</span>
+          </div>
+          <div class="text-center" style="float: right;margin-left: 30px;">
+            <button class="btn btn-lg btn-raised btn-wave btn-icon btn-rounded mb-2 teal"
+              routerlink="/paginaprincipal/mov-pesos" (click)="modal.close()">
+              <a routerLink="/paginaprincipal/inicio">
+                <i class="fas fa-hand-holding-usd" style="color: white;"></i>
+              </a>
+            </button><br>
+            <span class="links_name">Otra operacion</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </ng-template>
+  //retiro
+  <ng-template #retiromodel let-modal>
+
+
+    <div class="modal-content rounded-0 p-4"
+      style="align-items: center;border-radius: 30px;background-color: transparent;">
+      <div class='top'>
+        <div class="success-checkmark">
+          <div class="check-icon">
+            <span class="icon-line line-tip"></span>
+            <span class="icon-line line-long"></span>
+            <div class="icon-circle"></div>
+            <div class="icon-fix"></div>
+          </div>
+        </div>
+        <div class="headr">Retiro de Dinero Realizado</div>
+      </div>
+
+      <div class="modal-body">
+        <div class="">
+          <div class="text-center" style="float: left;">
+            <button class="btn btn-lg btn-raised btn-wave btn-icon btn-rounded mb-2 teal"
+              routerlink="/paginaprincipal/inicio" (click)="modal.close()">
+              <a routerLink="/paginaprincipal/inicio">
+                <i class="fas fa-home" style="color:white"></i>
+              </a>
+            </button><br>
+            <span class="links_name">Inicio</span>
+          </div>
+          <div class="text-center" style="float: right;margin-left: 30px;">
+            <button class="btn btn-lg btn-raised btn-wave btn-icon btn-rounded mb-2 teal"
+              routerlink="/paginaprincipal/mov-pesos" (click)="modal.close()">
+              <a routerLink="/paginaprincipal/inicio">
+                <i class="fas fa-hand-holding-usd" style="color: white;"></i>
+              </a>
+            </button><br>
+            <span class="links_name">Otra operacion</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </ng-template>
+
+
 </body>
-
-
-
-  
