@@ -1,24 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "F:\\PROYECTOS\\CARRERA\\BilleteraVirtual\\BACK\\PILpw.csproj": {}
+    "A:\\Github\\BilleteraVirtual\\BACK\\PILpw.csproj": {}
   },
   "projects": {
-    "F:\\PROYECTOS\\CARRERA\\BilleteraVirtual\\BACK\\PILpw.csproj": {
+    "A:\\Github\\BilleteraVirtual\\BACK\\PILpw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PROYECTOS\\CARRERA\\BilleteraVirtual\\BACK\\PILpw.csproj",
+        "projectUniqueName": "A:\\Github\\BilleteraVirtual\\BACK\\PILpw.csproj",
         "projectName": "PILpw",
-        "projectPath": "F:\\PROYECTOS\\CARRERA\\BilleteraVirtual\\BACK\\PILpw.csproj",
-        "packagesPath": "C:\\Users\\hernan\\.nuget\\packages\\",
-        "outputPath": "F:\\PROYECTOS\\CARRERA\\BilleteraVirtual\\BACK\\obj\\",
+        "projectPath": "A:\\Github\\BilleteraVirtual\\BACK\\PILpw.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "A:\\Github\\BilleteraVirtual\\BACK\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\hernan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
